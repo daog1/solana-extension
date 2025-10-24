@@ -498,13 +498,13 @@
 /* Resize handle */
 .chat-resize-handle {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 20px;
     height: 20px;
     cursor: nw-resize;
     background: linear-gradient(-45deg, transparent 0%, transparent 30%, #1a73e8 30%, #1a73e8 40%, transparent 40%, transparent 60%, #1a73e8 60%, #1a73e8 70%, transparent 70%);
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 10px 0;
     opacity: 0.7;
     transition: opacity 0.2s;
 }
