@@ -523,8 +523,8 @@ class SolscanAIAssistant {
         const resize = (e: MouseEvent) => {
             if (!isResizing) return;
 
-            const newWidth = startWidth + (e.clientX - startX);
-            const newHeight = startHeight + (e.clientY - startY);
+            const newWidth = startWidth - (e.clientX - startX);
+            const newHeight = startHeight - (e.clientY - startY);
 
             // Apply constraints
             const constrainedWidth = Math.max(350, Math.min(800, newWidth));
