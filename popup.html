@@ -1,0 +1,132 @@
+<!doctype html>
+<html style="width: 600px; min-width: 600px;">
+    <head>
+        <title>Solana AI Assistant Settings</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=600, initial-scale=1.0" />
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="settings-container" style="width: 600px; min-width: 600px;">
+            <div class="header">
+                <h1>Solana AI Assistant</h1>
+                <p>Configure your AI analysis settings</p>
+            </div>
+
+            <div id="status"></div>
+
+            <div class="settings-content">
+                <div class="setting-group">
+                    <label for="geminiApiKey">Gemini API Key (预配置)</label>
+                    <div class="input-container">
+                        <input
+                            type="text"
+                            id="geminiApiKey"
+                            class="sensitive-input wide-input"
+                            style="width: 100%; max-width: 550px;"
+                            placeholder="API key is pre-configured"
+                        />
+                        <button
+                            class="toggle-visibility"
+                            title="Toggle visibility"
+                        >
+                            👁️
+                        </button>
+                    </div>
+                    <div class="help-text">API密钥已预配置，无需修改</div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="mcpUrl">MCP URL</label>
+                    <div class="input-container">
+                        <input
+                            type="text"
+                            id="mcpUrl"
+                            class="sensitive-input wide-input"
+                            style="width: 100%; max-width: 550px;"
+                            placeholder="https://solmcp.daog1.workers.dev/mcp?apiKey=your-key"
+                        />
+                        <button
+                            class="toggle-visibility"
+                            title="Toggle visibility"
+                        >
+                            👁️
+                        </button>
+                    </div>
+                    <div class="help-text">
+                        完整的 MCP 服务器 URL，包括 API key 参数
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="geminiModel">Gemini Model</label>
+                    <select id="geminiModel" class="select-input">
+                        <option value="gemini-flash-latest">
+                            Gemini Flash Latest
+                        </option>
+                        <option value="gemini-2.5-pro">Gemini 2.5 Pro</option>
+                    </select>
+                    <div class="help-text">
+                        Recommended to use Gemini Flash Latest for best tool calling support
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="temperature">Temperature</label>
+                    <input
+                        type="range"
+                        id="temperature"
+                        min="0"
+                        max="1"
+                        step="0.1"
+                        value="0.7"
+                    />
+                    <div class="range-value" id="temperatureValue">0.7</div>
+                    <div class="help-text">
+                        Controls randomness in AI responses (0 = deterministic,
+                        1 = creative)
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="maxTokens">Max Tokens</label>
+                    <input
+                        type="number"
+                        id="maxTokens"
+                        min="100"
+                        max="8192"
+                        value="2048"
+                    />
+                    <div class="help-text">Maximum length of AI responses</div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="responseLanguage">Response Language</label>
+                    <select id="responseLanguage" class="select-input">
+                        <option value="zh-CN">中文 (Chinese)</option>
+                        <option value="en-US">English</option>
+                        <option value="ja-JP">日本語 (Japanese)</option>
+                        <option value="ko-KR">한국어 (Korean)</option>
+                    </select>
+                    <div class="help-text">
+                        Language for AI analysis and responses
+                    </div>
+                </div>
+
+                <div class="settings-actions">
+                    <button id="saveSettings" class="primary-button">
+                        Save Settings
+                    </button>
+                    <button id="resetSettings" class="secondary-button">
+                        Reset
+                    </button>
+                    <button id="verifySettings" class="secondary-button">
+                        Verify Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

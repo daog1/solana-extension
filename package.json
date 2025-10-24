@@ -1,0 +1,34 @@
+{
+  "name": "solscan-ai-extension",
+  "version": "1.0.0",
+  "description": "AI-powered transaction analysis for Solscan using MCP integration",
+  "main": "background.ts",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.26.0",
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "marked": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "copy-webpack-plugin": "^12.0.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "ai",
+    "mcp",
+    "browser-extension",
+    "solscan"
+  ],
+  "author": "",
+  "license": "MIT"
+}

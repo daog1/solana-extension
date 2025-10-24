@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Solana AI Assistant",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "AI-powered transaction analysis for Solana",
+    "description": "Extension description"
+  },
+  "summarizePageContent": {
+    "message": "Summarize page content",
+    "description": "Context menu item"
+  },
+  "extractPageContent": {
+    "message": "Extract page content",
+    "description": "Context menu item"
+  }
+}
