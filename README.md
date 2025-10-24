@@ -11,6 +11,23 @@ A browser extension that provides AI-powered transaction analysis and chat funct
 - 🌍 **Multi-language Support**: Supports Chinese, English, Japanese, Korean
 - ⚡ **Tool Calling**: AI can intelligently call blockchain data retrieval tools
 
+## Screenshots
+
+### AI Transaction Analysis
+![AI Transaction Analysis](screenshots/aitxAnalysis.jpg)
+
+*AI-powered transaction analysis panel showing detailed blockchain insights*
+
+### AI Chat Interface
+![AI Chat Interface](screenshots/aichat.jpg)
+
+*Interactive chat with AI assistant for transaction questions*
+
+### AI Toolbar
+![AI Toolbar](screenshots/aibar.jpg)
+
+*Extension toolbar with quick access to AI features*
+
 ## Technical Architecture
 
 ```
