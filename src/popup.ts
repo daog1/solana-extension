@@ -12,7 +12,6 @@ const translations = {
         saveSettings: 'Save Settings',
         resetSettings: 'Reset',
         verifySettings: 'Verify Settings',
-        geminiApiKeyHelp: 'API密钥已预配置，无需修改',
         mcpUrlHelp: '完整的 MCP 服务器 URL，包括 API key 参数',
         geminiModelHelp: '推荐使用 Gemini Flash Latest 以获得最佳的工具调用支持',
         temperatureHelp: 'Controls randomness in AI responses (0 = deterministic, 1 = creative)',
@@ -43,7 +42,6 @@ const translations = {
         saveSettings: 'Save Settings',
         resetSettings: 'Reset',
         verifySettings: 'Verify Settings',
-        geminiApiKeyHelp: 'API key is pre-configured, no modification needed',
         mcpUrlHelp: 'Complete MCP server URL including API key parameter',
         geminiModelHelp: 'Recommended to use Gemini Flash Latest for best tool calling support',
         temperatureHelp: 'Controls randomness in AI responses (0 = deterministic, 1 = creative)',
@@ -173,7 +171,6 @@ class UIManager {
 
         // Update help texts
         const helpTexts = {
-            'geminiApiKey': t.geminiApiKeyHelp,
             'mcpUrl': t.mcpUrlHelp,
             'geminiModel': t.geminiModelHelp,
             'temperature': t.temperatureHelp,
