@@ -300,8 +300,8 @@
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 350px;
-    height: 500px;
+    width: 450px;
+    height: 600px;
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -310,9 +310,9 @@
     flex-direction: column;
     z-index: 10001;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    min-width: 300px;
-    min-height: 400px;
-    max-width: 600px;
+    min-width: 350px;
+    min-height: 450px;
+    max-width: 800px;
     max-height: 80vh;
 }
 
@@ -499,12 +499,12 @@
 .chat-resize-handle {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 20px;
     height: 20px;
     cursor: nw-resize;
     background: linear-gradient(-45deg, transparent 0%, transparent 30%, #1a73e8 30%, #1a73e8 40%, transparent 40%, transparent 60%, #1a73e8 60%, #1a73e8 70%, transparent 70%);
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 0 10px;
     opacity: 0.7;
     transition: opacity 0.2s;
 }

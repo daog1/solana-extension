@@ -527,8 +527,8 @@ class SolscanAIAssistant {
             const newHeight = startHeight + (e.clientY - startY);
 
             // Apply constraints
-            const constrainedWidth = Math.max(300, Math.min(600, newWidth));
-            const constrainedHeight = Math.max(400, Math.min(window.innerHeight * 0.8, newHeight));
+            const constrainedWidth = Math.max(350, Math.min(800, newWidth));
+            const constrainedHeight = Math.max(450, Math.min(window.innerHeight * 0.8, newHeight));
 
             this.chatPanel!.style.width = `${constrainedWidth}px`;
             this.chatPanel!.style.height = `${constrainedHeight}px`;
